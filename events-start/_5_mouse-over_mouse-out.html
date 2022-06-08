@@ -3,16 +3,22 @@
 
 <head>
     <script>
-        function resizedImage(el) {
+        function resizedImage() {
             /* 
                 TODO change width and size of the element
             */
+            document.getElementById("image")
+                .width = "700"
+                .size = "100";
         }
 
-        function defaultImage(el) {
+        function defaultImage() {
             /* 
                 TODO change width and size of the element
             */
+            document.getElementById("image")
+                .width = "300"
+                .size = "360";
         }
     </script>
 </head>
@@ -25,7 +31,7 @@
             - onmouseout: call defaultImage(this) function 
      -->
     <img onmouseover="resizedImage(this)" onmouseout="defaultImage(this)" src="./images/bright-logo.png" alt="Bright" width="300"
-        height="80">
+        height="80" id="image">
 
     <p>resizedImage() is triggered when the user moves the mouse pointer over the logo.</p>
     <p>defaultImage() is triggered when the mouse pointer is moved out of the logo.</p>
