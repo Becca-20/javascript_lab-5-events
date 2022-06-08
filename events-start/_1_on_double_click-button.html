@@ -6,9 +6,7 @@
     function displayDate() {
       document.getElementById("date").innerHTML = Date();
     }
-  </script>
-  <script src="app.js" defer></script>
-  
+  </script>  
 </head>
 
 <body>
@@ -16,7 +14,7 @@
   <h2>JavaScript HTML Events - double click</h2>
   <p id="date"></p>
     <!-- TODO use an event (double click) to call displayDate() -->
-  <button type="button" id="button1">Double click me to display Date.</button>
+  <button type="button" id="button1" onclick="displayDate()">Double click me to display Date.</button>
 
 </body>
 
