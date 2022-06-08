@@ -8,7 +8,10 @@
         TODO
         - display Date in the "date" paragraph
       */
+      document.getElementById("date").innerHTML = Date();
     }
+
+    // document.getElementById("button2").addEventListener("click", displayDate);
   </script>
 </head>
 
@@ -18,7 +21,7 @@
   <p id="date"></p>
 
   <!-- TODO add onclick event to call displayDate() -->
-  <button type="button">Click me to display Date.</button>
+  <button type="button" id="button2" onclick="displayDate()">Click me to display Date.</button>
 
 </body>
 

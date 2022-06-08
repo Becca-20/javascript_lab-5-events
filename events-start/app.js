@@ -11,3 +11,5 @@ button1.addEventListener("dblclick", displayDate);
 
 
 
+// TASK 2
+
